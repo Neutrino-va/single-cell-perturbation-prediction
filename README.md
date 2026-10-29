@@ -14,16 +14,20 @@
 
 ```powershell
 python -m pip install -r requirements.txt
+python 数据审计.py 数据/de_train.parquet --out 数据审计结果.json
 python 实验.py
+python 补充实验.py
+python 公平比较与误差分析.py
 python 多细胞少样本探索.py
+python 跨细胞相关性探索.py
 python 药物均值岭回归融合实验.py
 python 补充随机划分评估.py
 ```
 
-请在仓库根目录运行。脚本会重新生成 `实验结果/` 的对应文件；初次运行 `实验.py` 和 `多细胞少样本探索.py` 会生成后续脚本需要的划分。依赖版本或硬件不同可能导致数值有细微变化。
+请在仓库根目录运行。脚本会重新生成 `实验结果/` 的对应文件；按上述顺序运行会生成后续脚本需要的划分和结果。依赖版本或硬件不同可能导致数值有细微变化。开发过程见[项目迭代记录](项目迭代记录.md)。
 
 ## 结果与解释
 
 在原先的三个常规组合留出划分中，融合模型 MRRMSE 为 1.2636±0.0643，完整岭回归为 1.2952±0.0372。后续五个随机划分中，融合模型在四次的误差低于完整岭回归。各划分复用同一数据集且可能共享上游对照；设计是在观察先前结果后完成的，因此这些只是探索性结果，不是独立临床验证或竞赛排行榜分数。融合模型在验证集搜索 25 种参数组合，岭回归只搜索 5 个正则化参数，模型比较还受搜索预算差异影响。
 
-使用的数据与任务来自 Open Problems – Single-Cell Perturbations (Kaggle, 2023)：https://www.kaggle.com/competitions/open-problems-single-cell-perturbations 。岭回归和类别编码采用 scikit-learn 的实现。项目代码以 MIT 许可证提供；发布前应核对第三方材料来源和许可证。
+使用的数据与任务来自 Open Problems – Single-Cell Perturbations (Kaggle, 2023)：https://www.kaggle.com/competitions/open-problems-single-cell-perturbations 。岭回归和类别编码采用 scikit-learn 的实现。项目代码以 MIT 许可证提供；第三方材料仍受其各自的许可证约束。
