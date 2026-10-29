@@ -1,0 +1,10 @@
+{
+  "format_version": 1,
+  "ridge_weight": 0.75,
+  "alpha": 100.0,
+  "training_rows": 614,
+  "configuration_source": "组合留出 seed 42",
+  "source_sha256": "b5fa2f763dd98b7662ec8819209cf97e68022e33a575df77d43d1153f7c5ac76",
+  "gene_count": 18211,
+  "file_size_bytes": 20357572
+}
