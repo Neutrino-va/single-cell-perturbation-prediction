@@ -1,0 +1,37 @@
+target,seed,model,n_test,mrrmse,alpha
+NK cells,42,drug_mean,116,1.1705207824707031,
+NK cells,42,ridge_both,116,1.385697364807129,100.0
+NK cells,42,ridge_drug_only,116,1.2076210975646973,10.0
+NK cells,123,drug_mean,116,1.2991260290145874,
+NK cells,123,ridge_both,116,1.4228285551071167,10.0
+NK cells,123,ridge_drug_only,116,1.3798078298568726,10.0
+NK cells,2026,drug_mean,116,1.3030154705047607,
+NK cells,2026,ridge_both,116,1.4736088514328003,100.0
+NK cells,2026,ridge_drug_only,116,1.287230372428894,1.0
+T cells CD4+,42,drug_mean,116,1.183894395828247,
+T cells CD4+,42,ridge_both,116,1.1862432956695557,1.0
+T cells CD4+,42,ridge_drug_only,116,1.164682149887085,1.0
+T cells CD4+,123,drug_mean,116,1.1519570350646973,
+T cells CD4+,123,ridge_both,116,1.2953522205352783,10.0
+T cells CD4+,123,ridge_drug_only,116,1.1272578239440918,1.0
+T cells CD4+,2026,drug_mean,116,1.2649816274642944,
+T cells CD4+,2026,ridge_both,116,1.281600832939148,10.0
+T cells CD4+,2026,ridge_drug_only,116,1.2461851835250854,1.0
+T regulatory cells,42,drug_mean,116,1.3441799879074097,
+T regulatory cells,42,ridge_both,116,1.1997300386428833,10.0
+T regulatory cells,42,ridge_drug_only,116,1.1626585721969604,10.0
+T regulatory cells,123,drug_mean,116,1.3065186738967896,
+T regulatory cells,123,ridge_both,116,1.128299355506897,100.0
+T regulatory cells,123,ridge_drug_only,116,1.0443148612976074,10.0
+T regulatory cells,2026,drug_mean,116,1.4643291234970093,
+T regulatory cells,2026,ridge_both,116,1.193115234375,10.0
+T regulatory cells,2026,ridge_drug_only,116,1.2000720500946045,10.0
+T cells CD8+,42,drug_mean,112,1.0723000764846802,
+T cells CD8+,42,ridge_both,112,0.7999362945556641,10.0
+T cells CD8+,42,ridge_drug_only,112,0.9377426505088806,10.0
+T cells CD8+,123,drug_mean,112,0.98933345079422,
+T cells CD8+,123,ridge_both,112,0.7709333300590515,10.0
+T cells CD8+,123,ridge_drug_only,112,0.8710234761238098,10.0
+T cells CD8+,2026,drug_mean,112,1.201660394668579,
+T cells CD8+,2026,ridge_both,112,0.9064597487449646,10.0
+T cells CD8+,2026,ridge_drug_only,112,1.1049261093139648,1.0
