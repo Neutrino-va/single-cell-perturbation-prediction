@@ -1,4 +1,7 @@
 数据/*.parquet
+模型/*.joblib
+模型/*.json
+预测结果.csv
 __pycache__/
 *.pyc
 .venv/
